@@ -45,17 +45,17 @@ AUTHENTICATION_BACKENDS = (
 )
 
 # The below config is taken from fusionauth admin UI when you set up the Django application in it
-OIDC_RP_CLIENT_ID = 'YOUR CLIENT ID'
-OIDC_RP_CLIENT_SECRET = 'YOUR CLIENT SECRET'
+OIDC_RP_CLIENT_ID = 'NjNkMmQzZjAtZDZiYS00'
+OIDC_RP_CLIENT_SECRET = 'MDRhMDJiY2YtODE5Zi00'
 
-OIDC_OP_AUTHORIZATION_ENDPOINT = "http://localhost:9011/oauth2/authorize"
-OIDC_OP_TOKEN_ENDPOINT = "http://localhost:9011/oauth2/token"
-OIDC_OP_USER_ENDPOINT = "http://localhost:9011/oauth2/userinfo"
+OIDC_OP_AUTHORIZATION_ENDPOINT = "https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/authorize"
+OIDC_OP_TOKEN_ENDPOINT = "https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/token"
+OIDC_OP_USER_ENDPOINT = "https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/userinfo"
 
 OIDC_RP_SCOPES = "openid profile email"
 
 #OIDC_RP_SIGN_ALGO = "RS256"
-OIDC_OP_JWKS_ENDPOINT = "http://localhost:9011/.well-known/jwks.json"
+OIDC_OP_JWKS_ENDPOINT = "https://prepiam.ice.ibmcloud.com/oidc/endpoint/default/jwks"
 
 LOGIN_REDIRECT_URL = "http://localhost:8000/django_sso_app/"
 LOGOUT_REDIRECT_URL = "http://localhost:8000/django_sso_app/"
